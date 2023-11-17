@@ -1,11 +1,12 @@
-import Header from "./components/header/Header";
-import Slider from "./components/slider/Slider";
+import React from 'react'
+import { Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+
 
 export default function App() {
   return (
-    <div>
-      <Header />
-      <Slider />
-    </div>
+    <Routes>
+      <Route path='/' element={<Homepage />} />
+    </Routes>
   )
 }
